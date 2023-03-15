@@ -1,0 +1,9 @@
+<!--pages/advice/advice.wxml-->
+<view class="advice-wrapper">
+  <item-advice class="advice-list" adviceList="{{adviceList}}" bind:supportOrHate="supportOrHate" />
+  <view class="advice-input">
+    <image bindtap="showDialog" src="/images/ic_add_advice.png"></image>
+  </view>
+</view>
+
+<comment showEditDialog="{{showEditDialog}}" bind:getCommentValue="getCommentValue"></comment>

@@ -1,0 +1,9 @@
+<!--pages/join/join.wxml-->
+<view class="join-wrapper">
+
+<image class="join-img" src="cloud://sdqp-0gyj1xpu7e321640.7364-sdqp-0gyj1xpu7e321640-1309120049/ic_join.jpg" mode="widthFix"></image>
+
+<view class="join-text">截图后扫码加入群聊</view>
+<view class="join-alert">节假日红包福利等您来领取</view>
+
+</view>

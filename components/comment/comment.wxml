@@ -1,0 +1,19 @@
+<!--components/comment/comment.wxml-->
+<view class="super-page-box" catchtouchmove="catchtouchmove" wx:if="{{showEditDialog}}">
+  <view class="super-modal-box">
+    <view class="super-modal-body-box">
+      <view class="super-modal-title">
+        编辑评论
+        <image src="./image/close.png" mode="widthFix" bindtap="closeModalTap" style="position: absolute; top: 10rpx; right: 20rpx; height: 55rpx; width: 55rpx;"></image>
+      </view>
+
+      <form bindsubmit="bindFormSubmit">
+        <view class="text-wrapper">
+          <textarea class="text-input" bindinput="getValueLength" name="textarea" placeholder="输入你想对我们说的话"  maxlength="100" row="3"/>
+          <view class="input-count">{{wordsCount}}/100</view>
+        </view>
+        <button class="submit-btn" form-type="submit">发表评论</button>
+      </form>
+    </view>
+  </view>
+</view>

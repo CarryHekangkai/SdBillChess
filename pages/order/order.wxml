@@ -1,0 +1,9 @@
+<!--pages/order/order.wxml-->
+<view class="room-wrapper">
+  <view class="tab-bar">
+    <block wx:for="{{topBarItems}}" wx:key="id">
+      <view class="tab-item {{item.selected ? 'tab-Selected': '' }}" catchtap="onTapTag" id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <item-room roomList="{{roomList}}" bind:orderRoom="orderRoom" />
+</view>

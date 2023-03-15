@@ -1,0 +1,19 @@
+/* pages/join/join.wxss */
+.join-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-img {
+  margin-top: 20rpx;
+  width: 80%;
+}
+
+.join-text {
+  margin-top: 20rpx;
+}
+
+.join-alert {
+  color: red;
+}

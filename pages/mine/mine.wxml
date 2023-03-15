@@ -1,0 +1,9 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine-wrapper">
+  <page-swiper class="mine-banner" banner="{{banner}}" />
+
+  <image class="mine-img" src="{{userHead}}" bindtap="bindSetHead"></image>
+  <view class="username">欢迎您，{{userName}}</view>
+</view>
+
+<avatarNicknameModal class="set-view" showAvaModal="{{showAvaModal}}" bind:getAvaNickData="getAvaNickData"></avatarNicknameModal>

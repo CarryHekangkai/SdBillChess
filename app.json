@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/join/join",
+    "pages/advice/advice"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "绅度台球棋牌",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+ 
+    "color": "#959595",
+    "selectedColor": "#0000ff",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "首页",
+        "iconPath": "images/ic_mine_d.png",
+        "selectedIconPath": "images/ic_mine_s.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "预约",
+        "iconPath": "images/ic_order_d.png",
+        "selectedIconPath": "images/ic_order_s.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "加群",
+        "iconPath": "images/ic_join_d.png",
+        "selectedIconPath": "images/ic_join_s.png"
+      },
+      {
+        "pagePath": "pages/advice/advice",
+        "text": "反馈",
+        "iconPath": "images/ic_advice_d.png",
+        "selectedIconPath": "images/ic_advice_s.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "item-advice":"/components/advice/item-advice",
+    "comment": "/components/comment/comment"
+  }
+}

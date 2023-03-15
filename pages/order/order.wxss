@@ -1,0 +1,49 @@
+/* pages/order/order.wxss */
+.order-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding: 10rpx 0;
+}
+
+.tab-bar {
+  height: 100rpx; 
+  display: flex;
+  margin-bottom: 24rpx;
+  background-color: wheat;
+}
+
+.tab-item {
+  flex: 1;
+  display: inline-block;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+}
+
+/* 选中样式 */
+
+.tab-Selected {
+  position: relative;
+  color: #25c6fc;
+  font-weight: 500;
+}
+
+.tab-Selected::after {
+  content: '';
+  height: 8rpx;
+  width: 40rpx;
+  background-color: #25c6fc;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -20rpx;
+}
+
+.endtime {
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 10;
+  background-color: white;
+}

@@ -1,0 +1,20 @@
+<!--components/chess/chess.wxml-->
+<view class="room-item" wx:for="{{roomList}}" wx:key="index">
+  <image class="room-pic" mode="aspectFit" src="{{item.type == 0? '/images/ic_billiards_d.png' : '/images/ic_majiang_d.png'}}"></image>
+
+  <view class="room-content">
+    <view class="room-id">{{item.type == 0? '台桌号: ' : '房间号: '}}{{item.roomId}}</view>
+    <view class="room-size" wx:if="{{item.type == 1}}">麻将子大小：{{item.size}}</view>
+    <view class="title">最近一次预定：</view>
+    <view class="info">
+      <view class="last-user-name">{{item.lastUserName}}</view>
+      <image class="last-user-img" src="{{item.lastUserImg}}"></image>
+    </view>
+    <view class="title">预定时间: </view>
+    <view class="order-time">{{item.orderTime}}</view>
+  </view>
+
+  <picker mode="multiSelector" data-index="{{index}}" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="order">点击预定</view>
+  </picker>
+</view>

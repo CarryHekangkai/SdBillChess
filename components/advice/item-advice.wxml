@@ -1,0 +1,16 @@
+<!--components/advice/item-advice.wxml-->
+<view class="advice-item" wx:for="{{adviceList}}" wx:key="index">
+  <image class="advicer-head" src="{{item.authorHead? item.authorHead : '/images/ic_user_default.png'}}"></image>
+
+  <view class="advice-content">
+    <view class="title">{{item.content}}</view>
+    <view class="bottom">
+      <view class="author">{{item.authorName? item.authorName : '微信用户'}}</view>
+      <view class="date">{{item.date}}</view>
+      <image class="support" src="{{item.support? '/images/ic_support_s.png' : '/images/ic_support_d.png'}}" catchtap="catchSupport" data-index="{{index}}"></image>
+      <view class="supportCount">{{item.supportCount}}</view>
+      <image class="hate" src="{{item.hate? '/images/ic_support_s.png' : '/images/ic_support_d.png'}}" catchtap="catchHate" data-index="{{index}}"></image>
+      <view class="hateCount">{{item.hateCount}}</view>
+    </view>
+  </view>
+</view>

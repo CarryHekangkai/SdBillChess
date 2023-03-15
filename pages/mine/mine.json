@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "page-swiper": "/components/swiper/page-swiper",
+    "avatarNicknameModal": "/components/avatarNicknameModal/avatarNicknameModal"
+  }
+}
